@@ -1,0 +1,12 @@
+[Unit]
+Description=game_of_rapprochement_bot
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/game/game_of_rapprochement_bot
+ExecStart=/usr/bin/python3 /root/game/game_of_rapprochement_bot/game_of_rapprochement_bot.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
