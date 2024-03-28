@@ -4,8 +4,8 @@ After=network.target
 
 [Service]
 User=root
-WorkingDirectory=/root/game/game_of_rapprochement_bot
-ExecStart=/usr/bin/python3 /root/game/game_of_rapprochement_bot/game_of_rapprochement_bot.py
+WorkingDirectory=/root/games/game_of_rapprochement_bot
+ExecStart=/usr/bin/python3 /root/games/game_of_rapprochement_bot/game_of_rapprochement_bot.py
 Restart=always
 
 [Install]
