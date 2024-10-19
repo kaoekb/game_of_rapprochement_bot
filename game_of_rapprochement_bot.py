@@ -208,7 +208,7 @@ def show_ads(message):
     if len(ads) == 0:
         bot.send_message(message.chat.id, "На данный момент нет активной рекламы.")
     else:
-        response = "Реклама:\n"
+        response = "Другие проекты:\n"
         for ad in ads:
             response += f"- [{ad['link']}]({ad['link']}): {ad['description']}\n"
         bot.send_message(message.chat.id, response, parse_mode="Markdown")
@@ -246,7 +246,7 @@ def bot_message(message):
                     'Правила очень просты: каждый по очереди нажимает кнопку «Вопрос» и отвечает на выпавшее сообщение. Ответ - это ключ от двери в личную историю.'
                 )
             elif message.text == 'Проекты':
-                send_projects(message)
+                show_ads(message)
     except Exception as e:
         logging.error(f"Ошибка в bot_message: {e}")
         bot.send_message(message.chat.id, "Произошла ошибка, попробуйте позже.")

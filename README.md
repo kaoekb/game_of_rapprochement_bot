@@ -19,3 +19,5 @@ docker run -d --name game_of_rapprochement_bot --restart=always --env-file .env 
 docker stop game_of_rapprochement_bot
 docker rm game_of_rapprochement_bot
 docker logs -f game_of_rapprochement_bot
+
+docker-compose up -d --build
