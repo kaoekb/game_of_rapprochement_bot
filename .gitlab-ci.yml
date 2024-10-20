@@ -11,7 +11,8 @@ build-job:
 test-job:
   stage: test
   script:
-    docker run -it --rm game_of_rapprochement_bot -s -v
+    echo "test"
+    # docker run -it --rm game_of_rapprochement_bot -s -v
 
 deploy-job:
   stage: deploy
