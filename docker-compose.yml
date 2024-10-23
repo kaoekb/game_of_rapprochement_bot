@@ -6,6 +6,8 @@ services:
       context: .
     env_file:
       - .env
+    environment:
+      - API_KEY=${API_KEY}  # Используем переменную API_KEY
     volumes:
       - ./logs:/app/logs
     restart: always

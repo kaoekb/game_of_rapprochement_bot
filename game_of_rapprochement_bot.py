@@ -10,6 +10,15 @@ import logging
 load_dotenv(find_dotenv())
 from question import question
 
+
+db_user = os.getenv('DB_USER')
+db_password = os.getenv('DB_PASSWORD')
+
+mongodb+srv://{db_user}:{db_password}@cluster0.w6k4v.mongodb.net/?retryWrites=true&w=majority
+
+# Подключаемся к MongoDB
+
+
 bot = telebot.TeleBot(os.getenv('Token_tg'))
 
 # Проверка на существование директории для логов
@@ -32,7 +41,7 @@ admin_user_id = int(os.getenv('Your_user_ID'))
 
 class DataBase:
     def __init__(self):
-        cluster = MongoClient(os.getenv('Token_MDB'))
+        cluster = MongoClient(mongo_uri)
         self.db = cluster["game_of_rapprochement"]
         self.users = self.db["Users"]
         self.projects = self.db["Projects"]
