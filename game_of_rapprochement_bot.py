@@ -19,7 +19,7 @@ mongodb+srv://{db}@cluster0.w6k4v.mongodb.net/?retryWrites=true&w=majority
 # Подключаемся к MongoDB
 
 
-bot = telebot.TeleBot(os.getenv('Token_tg'))
+bot = telebot.TeleBot(os.getenv('Token_tg_1'))
 
 # Проверка на существование директории для логов
 log_dir = "logs"
