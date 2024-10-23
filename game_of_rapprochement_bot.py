@@ -12,8 +12,6 @@ from question import question
 
 
 db= os.getenv('DB')
-
-
 mongodb+srv://{db}@cluster0.w6k4v.mongodb.net/?retryWrites=true&w=majority
 
 # Подключаемся к MongoDB
