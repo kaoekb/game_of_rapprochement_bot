@@ -11,10 +11,10 @@ load_dotenv(find_dotenv())
 from question import question
 
 
-db_user = os.getenv('DB_USER')
-db_password = os.getenv('DB_PASSWORD')
+db= os.getenv('DB')
 
-mongodb+srv://{db_user}:{db_password}@cluster0.w6k4v.mongodb.net/?retryWrites=true&w=majority
+
+mongodb+srv://{db}@cluster0.w6k4v.mongodb.net/?retryWrites=true&w=majority
 
 # Подключаемся к MongoDB
 
