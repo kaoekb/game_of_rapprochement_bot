@@ -7,7 +7,7 @@ services:
     env_file:
       - .env
     environment:
-      - Token_tg=${Token_tg}
+      - Token_tg_1=${Token_tg_1}
       - Your_user_ID=${Your_user_ID}
       - db=${db}
       
