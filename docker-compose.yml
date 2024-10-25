@@ -7,7 +7,10 @@ services:
     env_file:
       - .env
     environment:
-      - API_KEY=${API_KEY}  # Используем переменную API_KEY
+      - Token_tg=${Token_tg}
+      - Your_user_ID=${Your_user_ID}
+      - db=${db}
+      
     volumes:
       - ./logs:/app/logs
     restart: always
