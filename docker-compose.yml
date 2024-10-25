@@ -4,8 +4,8 @@ services:
   game_of_rapprochement_bot:
     build:
       context: .
-    env_file:
-      - .env
+    # env_file:
+    #   - .env
     environment:
       - Token_tg_1=${Token_tg_1}
       - Your_user_ID=${Your_user_ID}
