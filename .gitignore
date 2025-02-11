@@ -2,3 +2,5 @@
 .env2
 /log
 /logs
+__pycache__
+work_copy.py
